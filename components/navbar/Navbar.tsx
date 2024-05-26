@@ -6,7 +6,6 @@ import { AnimatePresence } from "framer-motion";
 import TransitionPortofolio from "../transition/TransitionPortofolio";
 import { usePathname } from "next/navigation";
 
-
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
@@ -28,9 +27,9 @@ const Navbar = () => {
       const timeout = setTimeout(() => {
         setIsRouting(false);
       }, 1200);
-
       return () => clearTimeout(timeout);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isRouting]);
 
   return (

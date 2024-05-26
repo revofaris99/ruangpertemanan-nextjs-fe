@@ -1,17 +1,19 @@
 "use client";
-import React,{useEffect, useRef} from "react";
+// eslint-disable-next-line react-hooks/exhaustive-deps
+import React, { useEffect, useRef } from "react";
 import AboutPhotoPorto from "./AboutPhotoPorto";
 import styles from "@/css/page.module.scss";
 import { useScroll, motion } from "framer-motion";
 const AboutPortofolio = () => {
   const element = useRef(null);
-  const {scrollYProgress}=useScroll({
-    target:element,
-    offset:['start 0.9','start 0.25']
-  })
-  useEffect(()=>{
-    scrollYProgress.on("change",e=> console.log(e))
-  },[])
+  const { scrollYProgress } = useScroll({
+    target: element,
+    offset: ["start 0.9", "start 0.25"],
+  });
+  useEffect(() => {
+    scrollYProgress.on("change", (e) => console.log(e));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
     <>
       <section className="h-full w-full">
@@ -25,7 +27,7 @@ const AboutPortofolio = () => {
               <div className="">
                 <motion.p
                   ref={element}
-                  style={{opacity:scrollYProgress}}
+                  style={{ opacity: scrollYProgress }}
                   className={styles.paragraph}
                   // className="max-w-[500px] mb-9 text-white mt-4"
                 >

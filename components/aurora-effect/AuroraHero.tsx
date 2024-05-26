@@ -7,11 +7,13 @@ import {
   useMotionValue,
   animate,
 } from "framer-motion";
+import { clearTimeout } from "timers";
 
 const COLORS = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 const AuroraHero = () => {
   const color = useMotionValue(COLORS[0])
   const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, transparent 50%, ${color})`
+
   useEffect(()=>{
     animate(color,COLORS,{
       ease:'easeInOut',
@@ -19,7 +21,9 @@ const AuroraHero = () => {
       repeat:Infinity,
       repeatType:"mirror"
     })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   },[])
+  
   return (
     <motion.section
     style={{
