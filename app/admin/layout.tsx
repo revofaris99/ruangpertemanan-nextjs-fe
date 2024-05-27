@@ -7,7 +7,7 @@ import {
   getActiveNavbar,
   getActiveRoute,
   isWindowAvailable,
-} from "utils/navigation";
+} from "@/utils/navigator";
 import React from "react";
 import AdminSidebar from "@/components/sidebar";
 import Footer from "@/components/footer/Footer";
