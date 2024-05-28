@@ -13,8 +13,7 @@ const Page = () => {
     <main className="w-screen h-screen relative">
       <Navbar />
       <div
-        className="flex items-center w-full h-full bg-cover bg-center"
-        style={{ backgroundImage: "url(/bg-portofolio.png)" }}
+        className="flex items-center w-full h-full bg-cover bg-center bg-[url('/bg-portofolio.png')]"
       >
         <div className="md:pl-40 pb-56 md:pb-20 flex flex-col gap-2 z-[50]">
           <p className="text-red-500">HI, My name is</p>
@@ -30,7 +29,7 @@ const Page = () => {
           </p>
           <div className="">
             <button className="rounded-lg group text-white border-2 px-6 py-3 my-2 flex item-center hover:bg-red-500 hover:border-red-500">
-              <Link href="experience-portofolio">View Experience</Link>
+              <Link href="/portofolio/portofolio-project">View Experience</Link>
               <span className="mt-1 group-hover:rotate-90 duration-300">
                 <Icons.HiArrowNarrowRight className="ml-3 text-bold" />
               </span>

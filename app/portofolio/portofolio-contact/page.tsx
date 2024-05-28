@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 const Page = () => {
   return (
-    <div className="">
+    <div className="bg-gray-900">
       <Navbar />
       <div
         className="bg-cover bg-black flex items-center justify-center w-screen h-screen overflow-x-hidden relative"

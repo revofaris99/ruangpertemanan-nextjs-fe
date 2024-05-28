@@ -133,7 +133,7 @@ export const Projects = [
     demo: "https://ankasa-app-rev.vercel.app/",
     code: "https://github.com/revofarissaifuddin/ankasa-app",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "The HireJob application is a web-based application that connects recruiters and job search. The HireJob Application There are several features where recruiter users or job seeker users can connect, register as users, add company and job seeker data, update portfolio data, experience, and skills, and update the data input to job seekers. Application Web hire built using Axios, React-Bootstrap, Redux, React js, Postgresql, and Express JS.",
   },
   {
     name: "Recipe Mobile Application",
